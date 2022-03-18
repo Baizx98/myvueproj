@@ -1,11 +1,12 @@
 <script setup>
-import { ref } from 'vue'
+import { ref } from "vue";
 
+// eslint-disable-next-line no-undef
 defineProps({
-  msg: String
-})
+  msg: { type: String, default: "" },
+});
 
-const count = ref(0)
+const count = ref(0);
 </script>
 
 <template>
@@ -19,12 +20,16 @@ const count = ref(0)
   </p>
 
   <p>
-    <a href="https://vitejs.dev/guide/features.html" target="_blank">Vite Documentation</a>
+    <a href="https://vitejs.dev/guide/features.html" target="_blank"
+      >Vite Documentation</a
+    >
     |
     <a href="https://v3.vuejs.org/" target="_blank">Vue 3 Documentation</a>
   </p>
 
-  <button type="button" @click="count++">我说了{{ count }}次九尾妖狐一点都不害怕</button>
+  <button type="button" @click="count++">
+    我说了{{ count }}次九尾妖狐一点都不害怕
+  </button>
   <!-- <el-button>这就是element plus咩</el-button> -->
   <el-row>
     <el-button>默认按钮</el-button>
